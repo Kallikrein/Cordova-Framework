@@ -1,0 +1,1 @@
+alias cordova='drun --privileged -v /dev/bus/usb:/dev/bus/usb -v $PWD:/src kallikrein/android-cordova -v /var/lib/docker/gradle:/gradle -e "GRADLE_USER_HOME=/gradle" cordova'
