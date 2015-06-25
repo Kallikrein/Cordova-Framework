@@ -1,0 +1,6 @@
+alias drun='docker run -it --rm'
+alias mine='sudo chown -R $USER'
+alias npm='drun -v $PWD:/src kallikrein/node-tools npm'
+alias bower='drun -v $PWD:/src kallikrein/node-tools bower --allow-root'
+alias cordova='drun --privileged -v /dev/bus/usb:/dev/bus/usb -v $PWD:/src kallikrein/android-cordova cordova'
+alias adb='drun --privileged -v /dev/bus/usb:/dev/bus/usb -v $PWD:/src kallikrein/android-cordova adb'
