@@ -2,4 +2,4 @@ cordova/platforms
 cordova/plugins
 cordova/gradle
 instance
-www
+core
