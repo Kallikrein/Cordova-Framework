@@ -8,7 +8,7 @@
 
 -----
 
-#### installation
+### installation
 
 ```
 git clone https://github.com/Kallikrein/Cordova-Framework.git
@@ -41,7 +41,7 @@ cordova build
 
 ```cordova run```
 
-#### troubleshooting
+### troubleshooting
 
 boot2docker :
 - if you are using virtual box (by default with boot2docker), you need to configure virtual box to allow symlinks :  
@@ -53,7 +53,7 @@ TODO SCREEN CAPTURE
 - VTx activated in bios
 CHECK IF OPTION IS ACTIVE IN VIRTUAL BOX
 
-#### Files architecture
+### Files architecture
 
 <pre>
 <b>./</b>
