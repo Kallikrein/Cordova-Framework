@@ -2,8 +2,8 @@
 
 ## Summary
 * [Installation](#installation)
-* [Files architecture](#files-architecture)
 * [Troubleshooting](#troubleshooting)
+* [Files architecture](#files-architecture)
 * [Cordova](#cordova)
 
 -----
@@ -41,6 +41,18 @@ cordova build
 
 ```cordova run```
 
+#### troubleshooting
+
+boot2docker :
+- if you are using virtual box (by default with boot2docker), you need to configure virtual box to allow symlinks :  
+```VBoxManage setextradata VM_NAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARE_NAME 1```  
+- if you have an android device you need to share the usb to the vm
+SEE SCREEN CAPTURE
+- deactivate hyperV
+TODO SCREEN CAPTURE
+- VTx activated in bios
+CHECK IF OPTION IS ACTIVE IN VIRTUAL BOX
+
 #### Files architecture
 
 <pre>
@@ -59,18 +71,6 @@ cordova build
 ├── <a href="#readme">README.md</a>
 └── <a href="#install">install.sh</a>
 </pre>
-
-#### troubleshooting
-
-boot2docker :
-- if you are using virtual box (by default with boot2docker), you need to configure virtual box to allow symlinks :  
-```VBoxManage setextradata VM_NAME VBoxInternal2/SharedFoldersEnableSymlinksCreate/SHARE_NAME 1```  
-- if you have an android device you need to share the usb to the vm
-SEE SCREEN CAPTURE
-- deactivate hyperV
-TODO SCREEN CAPTURE
-- VTx activated in bios
-CHECK IF OPTION IS ACTIVE IN VIRTUAL BOX
 
 #### cordova/
 > [Cordova v5.1.1](http://cordova.apache.org/docs/en/5.1.1/index.html)
