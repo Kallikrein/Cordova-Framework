@@ -77,3 +77,26 @@ CHECK IF OPTION IS ACTIVE IN VIRTUAL BOX
 
 **Cordova** is a platform for building native mobile applications using HTML, CSS and Javascript on all the most popular mobile OS. It creates a WebView component where your code is executed and provides an interface that let you call native function in Javascript.
 This is where all **cordova** files are stored to build mobile application.<br>
+
+##### core/
+> [core repo](https://github.com/Kallikrein/core/blob/master/README.md)
+
+This folder contains the application core files. All the magic js is happening in here.
+Changing core needs checking out in this folder, eg:
+```
+cd core
+git checkout dev
+```
+
+##### instance/
+> [instance repo](https://github.com/Kallikrein/instance/blob/master/README.md)
+
+This folder contains every instance specific configuration files. Especially config.xml, css files and images.
+
+##### config.xml
+This file is a symlink to /[instance](https://github.com/Kallikrein/instance)/[config.xml](https://github.com/Kallikrein/instance/tree/master/config.xml)  
+Saving and commiting this file should be done in /instance which is a different repo than Cordova-Framewok.
+
+##### www/
+This folder is a symlink file to /[core](https://github.com/Kallikrein/core)/[www](https://github.com/Kallikrein/core/tree/master/www)  
+Saving and commiting this folder should be done in /core which is a different repo than Cordova-Framewok.
