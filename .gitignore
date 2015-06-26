@@ -3,3 +3,4 @@ cordova/plugins
 cordova/gradle
 instance
 core
+.debug.keystore
